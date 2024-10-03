@@ -1,0 +1,27 @@
+*{
+	--dark:--yokki-black;
+	--light:--yokki-off-white;
+}
+[color-scheme="light"] {
+  color-scheme: "light";
+	--text:var(--dark);
+	--background:var(--light);
+
+}
+[color-scheme="dark"] {
+  color-scheme: "dark";
+	--text:var(--light);
+	--background:var(--dark);
+}
+:root{
+  color-scheme: "light";
+	--text:var(--light);
+	--background:var(--dark);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;		  
+	--text:var(--light);
+	--background:var(--dark);
+	}
+}
